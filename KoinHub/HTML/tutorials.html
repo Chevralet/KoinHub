@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOiNHUB - Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/tutorials.css" />
+  <link rel="stylesheet" href="../CSS/shared.css" />
+</head>
+
+<!-- Dark themed body -->
+<body class="bg-koinhub-black text-koinhub-white">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-koinhub-orange fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../Images/KHubBanner.png" alt="KOiNHUB Logo" height="40" />
+    </a>
+
+    <!-- Toggle mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+<!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="market.html">Market</a></li>
+        <li class="nav-item"><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+        <li class="nav-item"><a class="nav-link" href="Klout.html">Klout</a></li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Klout Ticker -->
+    <div class="klout-ticker">
+      <marquee scrollamount="5">
+        🚨 $KLOUT is up 800% after verified breakup tweet | 👑 Main Character Wallet just minted another 5M tokens | 🔥 Viral spike detected in Wallet #42069 | 🎭 Fake collab rumors boosting Flex Pools | ☠️ Ratio incoming... sell now or get canceled | 🚀 $KLOUT on track to outpace Dogecoin in pure delusion per market cap | $KLOUT RUGGED 3x THEN PUMPED 12x AFTER AN APOLOGY VIDEO DROPPED |
+      </marquee>
+    </div>
+  </nav>
+
+  <!-- Tutorials Section -->
+  <section class="tutorials-section py-5 mt-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">Crypto 101: Don't Get Rugged</h1>
+      <div class="row">
+
+              <!-- Article 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-koinhub-eerie text-koinhub-white">
+            <div class="card-body">
+              <h5 class="card-title">How to Buy Crypto</h5>
+              <p class="card-text">Step 1: Connect your wallet — preferably one that hasn’t been drained yet. Step 2: Brace for impact, because gas fees will make you question your life choices. Step 3: Buy high, sell higher — or at least tell yourself that.
+              </p>
+              <a href="#" class="btn btn-koinhub-orange" data-bs-toggle="modal" data-bs-target="#signupModal">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      <!-- Article 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-koinhub-eerie text-koinhub-white">
+            <div class="card-body">
+              <h5 class="card-title">How to Sell Crypto</h5>
+              <p class="card-text">Think you can time the market? That’s cute. Sell when you're 80% down, just before it moons. Or hold forever like a true diamond-handed masochist. Either way, the devs already pulled liquidity and left for Bali. </p>
+              <a href="#" class="btn btn-koinhub-orange" data-bs-toggle="modal" data-bs-target="#signupModal">Read More</a>
+            </div>
+          </div>
+        </div>
+
+              <!-- Article 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-koinhub-eerie text-koinhub-white">
+            <div class="card-body">
+              <h5 class="card-title">How to Get Rugged</h5>
+              <p class="card-text">Step 1: See a token trending on X with zero utility and a pixelated frog mascot? Perfect. Step 2: Ignore the fact the contract isn’t renounced and the dev is named “0xDaddy69.” Step 3: Go all in.</p>
+              <a href="#" class="btn btn-koinhub-orange" data-bs-toggle="modal" data-bs-target="#signupModal">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to KOiNHUB</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="loginForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="h4ck3rm3@gov.koinhub" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Your secret key" required>
+              <div class="invalid-feedback">Password must be at least 8 characters.</div>
+            </div>
+            <div class="mb-3">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#twoFAModal" data-bs-dismiss="modal">Enable 2FA</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-koinhub-orange">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up for KOiNHUB</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="signupForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="h4ck3rm3@gov.koinhub" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Your secret key" required>
+              <div class="invalid-feedback">Password must be at least 8 characters.</div>
+            </div>
+            <div class="mb-3">
+              <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm your secret key" required>
+              <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-koinhub-orange">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2FA Modal -->
+  <div class="modal fade" id="twoFAModal" tabindex="-1" aria-labelledby="twoFAModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="twoFAModalLabel">Two-Factor Authentication</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="twoFAForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="twoFACode" class="form-label">Enter 2FA Code</label>
+              <input type="text" class="form-control" id="twoFACode" placeholder="123456" required>
+              <div class="invalid-feedback">Enter a 6-digit code.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-koinhub-orange">Verify</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-koinhub-orange text-koinhub-white py-4">
+    <div class="container text-center">
+      <p>© 2025 KOiNHUB. All rights reserved. KloutKoin™ Don't trust, verify.</p>
+    </div>
+  </footer>
+
+      <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../JS/script.js"></script>
+
+</body>
+</html>

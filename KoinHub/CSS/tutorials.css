@@ -1,0 +1,109 @@
+/* Root Color Variables */
+:root {
+  --koinhub-black: #000000;
+  --koinhub-night: #101010;
+  --koinhub-eerie: #1C1C1C;
+  --koinhub-white: #ffffff;
+  --koinhub-orange: #F27A1A;
+  --koinhub-orange-hover: #ffa64d;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Body theme and navi space */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--koinhub-black);
+  color: var(--koinhub-white);
+  padding-top: 100px; /* space for fixed navi */
+  line-height: 1.6;
+}
+
+/* Tutorials Section */
+.tutorials-section {
+  background-color: var(--koinhub-black);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+/* Tut Heading*/
+.tutorials-section h1 {
+  color: var(--koinhub-white);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* Flex Card style */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+/* Card Column */
+.col-md-4 {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+/* Style cards */
+.card {
+  background-color: var(--koinhub-eerie);
+  border: 1px solid var(--koinhub-night);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  box-shadow: 0 0 10px rgba(242, 122, 26, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* Glow FX Hover*/
+.card:hover {
+  box-shadow: 0 0 20px rgba(242, 122, 26, 0.6);
+}
+/* Style card body */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--koinhub-orange);
+}
+
+.card-text {
+  flex-grow: 1;
+  color: var(--koinhub-white);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Button styles */
+.btn-koinhub-orange {
+ background-color: var(--koinhub-orange) 
+  border-color: var(--koinhub-orange) 
+  color: var(--koinhub-black) 
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(242, 122, 26, 0.5);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-koinhub-orange:hover,
+.btn-koinhub-orange:focus {
+background-color: var(--koinhub-orange-hover) !important;
+  border-color: var(--koinhub-orange-hover) !important;
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(242, 122, 26, 0.7);
+}

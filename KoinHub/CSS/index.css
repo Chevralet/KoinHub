@@ -1,0 +1,22 @@
+/* Base Style */
+.hero-section {
+  background-color: var(--koinhub-black);
+  min-height: 100vh;
+}
+/* Mini KK Square logo*/
+.koinhub-logo {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/*News Article Carousel */
+.carousel-item .card {
+    background-color: var(--koinhub-black);
+    color: var(--koinhub-white);
+  margin: 0 auto;
+  max-width: 500px;
+}

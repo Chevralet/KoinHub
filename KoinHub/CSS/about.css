@@ -1,0 +1,46 @@
+
+/* Content Styles */
+.about-section,
+.faq-section,
+.contact-section {
+  border: 1px solid var(--koinhub-eerie);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+
+/* Heading Underline */
+h1 {
+  text-decoration: underline;
+}
+
+/* Style lists and quotes in about section */
+.about-section ul,
+.about-section blockquote {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Style FAQs accordion btns */
+.accordion-button {
+  background-color: var(--koinhub-eerie) !important;
+  color: var(--koinhub-white) !important;
+}
+/*open accordion buttons */
+.accordion-button:not(.collapsed) {
+  background-color: var(--koinhub-night) !important;
+}
+
+/* Mobile 1st */
+@media screen and (max-width: 767px) {
+  .about-section,
+  .faq-section,
+  .contact-section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

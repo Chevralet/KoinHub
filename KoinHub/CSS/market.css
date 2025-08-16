@@ -1,0 +1,51 @@
+:root {
+  --koinhub-black: #000000;
+  --koinhub-night: #101010;
+  --koinhub-eerie: #1C1C1C;
+  --koinhub-white: #ffffff;
+  --koinhub-orange: #F27A1A;
+}
+
+/* Base Style*/
+body {
+  padding-top: 100px; /* space for nav & marquee */
+  background-color: var(--koinhub-black);
+  color: var(--koinhub-white);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Table Style*/
+
+.market-table thead th {
+  color: var(--koinhub-orange)
+}
+
+/* Respnsive Media Queries*/
+
+/* Mobile */
+@media (max-width: 576px) {
+  table td img {
+    width: 16px;
+  }
+
+  .portfolio-cell button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  td:nth-child(2) {
+    font-size: 0.85rem;
+  }
+
+  td:nth-child(1),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    font-size: 0.75rem;
+  }
+/* Sparkline Override*/
+  canvas {
+    width: 80px !important; 
+    height: 20px !important;
+  }
+}

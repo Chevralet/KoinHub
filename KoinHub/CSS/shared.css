@@ -1,0 +1,401 @@
+/* Color Scheme*/
+:root {
+  --koinhub-black: #000000;
+  --koinhub-night: #101010;
+  --koinhub-eerie: #1C1C1C;
+  --koinhub-white: #ffffff;
+  --koinhub-orange: #F27A1A;
+  --koinhub-orange-hover: #ffa64d; /* Lighter shade for hover states */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Base Style */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--koinhub-black);
+  color: var(--koinhub-white);
+  padding-top: 100px; /* Space for fixed navbar + ticker */
+  line-height: 1.6;
+}
+
+/* Heading & P ctrl */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+h2 {
+  color: var(--koinhub-orange);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--koinhub-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Sticky Nav */
+.navbar {
+  background-color: var(--koinhub-black) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo Size */
+.navbar-brand img {
+  max-height: 40px;
+}
+/* White Links */
+.nav-link {
+  color: var(--koinhub-white) !important;
+  font-weight: 700;
+}
+/* Orange Link Hover*/
+.nav-link:hover {
+  color: var(--koinhub-orange-hover) !important;
+
+}
+
+/* Klout Ticker */
+.klout-ticker {
+  position: fixed;
+  top: 56px; /* Below navi */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: monospace;
+  background-color: var(--koinhub-black);
+  color: var(--koinhub-orange);
+  font-weight: bold;
+  padding: 0.25rem 0;
+}
+
+/* Klout Ticker Mobile 1st*/
+@media (max-width: 768px) {
+  .klout-ticker {
+    top: 100px; 
+  }
+}
+
+/* Buttons */
+
+/*orange button */
+.btn-koinhub-orange {
+  background-color: var(--koinhub-orange);
+  color: var(--koinhub-black);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+/* orange button hover */
+.btn-koinhub-orange:hover {
+  background-color: var(--koinhub-orange-hover);
+  color: var(--koinhub-black);
+  text-decoration: none;
+
+}
+
+
+/*  Orange BS warning btns */
+.btn-warning {
+  background-color: var(--koinhub-orange) !important;
+  border-color: var(--koinhub-orange) !important;
+  color: var(--koinhub-black) !important;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(242, 122, 26, 0.5);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+/* orange BS Btn hover FX */
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: var(--koinhub-orange-hover) !important;
+  border-color: var(--koinhub-orange-hover) !important;
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(242, 122, 26, 0.7);
+}
+
+/* Cards and Tables */
+
+/* Dark Cards */
+.card {
+  border: 1px solid var(--koinhub-eerie);
+  background-color: var(--koinhub-night);
+}
+
+/* Striped Table */
+.table-dark {
+  --bs-table-bg: var(--koinhub-eerie);
+  --bs-table-striped-bg: var(--koinhub-night);
+  border-color: var(--koinhub-eerie);
+}
+
+/* Adjust table for mobile */
+@media (max-width: 576px) {
+  table td img {
+    width: 16px;
+  }
+  td:nth-child(2) {
+    font-size: 0.85rem;
+  }
+  td:nth-child(1),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    font-size: 0.75rem;
+  }
+  /* Sparkline Override */
+  canvas {
+    width: 80px !important;
+    height: 20px !important;
+  }
+}
+
+/* Modals */
+
+/* Dark Modals W/ Orange Glow */
+.modal-content {
+  background-color: var(--koinhub-eerie);
+  color: var(--koinhub-white);
+  border: 2px solid var(--koinhub-orange);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(242, 122, 26, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--koinhub-orange);
+  background-color: var(--koinhub-night);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--koinhub-orange);
+}
+
+.btn-close {
+  filter: invert(100%);
+  opacity: 0.8;
+}
+
+/* Input Styles */
+.form-control {
+  background-color: var(--koinhub-night);
+  color: var(--koinhub-white);
+  border: 1px solid var(--koinhub-orange);
+  border-radius: 6px;
+}
+/* Glow FX*/
+.form-control:focus {
+  background-color: var(--koinhub-night);
+  color: var(--koinhub-white);
+  border-color: var(--koinhub-orange);
+  box-shadow: 0 0 0 0.2rem rgba(242, 122, 26, 0.25);
+}
+
+/* labels and links */
+
+
+label {
+  color: var(--koinhub-white);
+}
+
+/* links */
+a {
+  color: var(--koinhub-orange);
+  text-decoration: none;
+}
+
+/* Hover Glow FX */
+a:hover {
+  color: var(--koinhub-orange-hover);
+  text-decoration: underline;
+}
+
+
+/*Form Validation*/
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.is-valid {
+  border-color: #198754 !important;
+}
+
+.is-valid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.invalid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+/* Content Sections */
+.about-section,
+.faq-section,
+.contact-section,
+.hero-section {
+  background-color: var(--koinhub-night);
+  border: 1px solid var(--koinhub-eerie);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* layout for rows and columns */
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.col-md-4 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.hero-section {
+  min-height: 100vh;
+}
+
+/* 3D Carousel */
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .slider {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 60s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(0deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(500px);
+}
+
+.banner .slider .item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Accordion */
+.accordion-button {
+  background-color: var(--koinhub-eerie) !important;
+  color: var(--koinhub-white) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--koinhub-night) !important;
+}
+
+.about-section ul,
+.about-section blockquote {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 1023px) {
+  .banner .slider {
+    width: 160px;
+    height: 160px;
+    left: calc(50% - 80px);
+  }
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+  }
+  .banner .slider .item img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .banner .slider {
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 50px);
+  }
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(180px);
+  }
+  .banner .slider .item img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-section,
+  .faq-section,
+  .contact-section,
+  .tutorials-section,
+  .hero-section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+/* Hide Ticker on Mobile */
+@media (max-width: 767px) {
+  .klout-ticker {
+    display: none;
+  }
+}
